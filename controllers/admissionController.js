@@ -5,7 +5,7 @@ class admissionController {
     //Creating Doc
     static createAdmissionDoc = async(req,res) => {
         try {
-            const {name, email, phone, message} = req.body
+            const {name, email, age, father_name, phone, mother_name, standard, gender, address} = req.body
             const doc = new admissionModel({
                 name: name,
                 email: email,
@@ -31,4 +31,5 @@ class admissionController {
 
 
 export {admissionController} 
+
 
